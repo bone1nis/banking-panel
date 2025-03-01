@@ -195,7 +195,7 @@ main {
 }
 
 /* Выставленые счета */
-.count-info {
+.info-sums {
     width: 900px;
     height: 538px;
     background-color: #fff;
@@ -204,7 +204,8 @@ main {
 }
 
 /* Транзакции */
-.transactions-info {
+.tranzactions-info {
+    padding: 28px 21px 0 21px;
     width: 660px;
     height: 538px;
     background-color: #fff;
@@ -654,4 +655,155 @@ main {
     line-height: 140%;
     color: #A0AEC0;
     border: none;
+}
+
+
+/* info-sums */
+
+.info-sums-h {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    margin-left: 21px;
+    margin-top: 28px;
+    color: #2d3748;
+}
+
+.info-sums-block {
+    padding-top: 24px;
+    padding-left: 27px;
+    padding-right: 13px;
+    width: 855px;
+    height: 132.5px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    margin-left: 21px;
+    margin-top: 24px;
+}
+
+.info-sums-up {
+    display: flex;
+}
+
+.info-sums-right {
+    display: flex;
+    margin-left: auto;
+}
+
+.info-sums-right-text {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+    color: #e53e3e;
+    margin-left: 3.5px;
+    margin-right: 12px;
+    top: 5px;
+}
+
+.info-sums-name {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    color: #718096;
+}
+
+.info-sums-text {
+    width: 266px;
+    margin-top: 7px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #a0aec0;
+}
+
+.mastercard {
+    margin-left: 19px;
+    background-image: url("../images/background/mastercard.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.tranzactions-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 17.5px;
+}
+
+.tranzactions-header-left {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2d3748;
+}
+
+.tranzactions-header-right {
+    display: flex;
+    gap: 6px;
+    color: #a0aec0;
+    margin-top: 4px;
+}
+
+.tranzactions-time-text {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+    color: #a0aec0;
+    margin-bottom: 17.5px;
+}
+
+.tranzactions-block-up {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.tranzactions-block-down {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.tranzactions-block-text {
+    margin-left: 14px;
+    margin-top: 4px;
+}
+
+.tranzactions-title-text-up {
+    font-size: 14px;
+    font-weight: 400;
+    color: #2d3748;
+    margin-bottom: 5px;
+}
+
+.tranzactions-title-text-down {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #a0aec0;
+}
+
+.price-down {
+    font-size: 14px;
+    font-weight: 400;
+    color: #e53e3e;
+    margin-left: auto;
+    margin-top: 16px;
+}
+
+.price-midle {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    text-align: right;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #2d3748;
+    margin-left: auto;
+    margin-top: 16px;
+}
+
+.price-up {
+    font-size: 14px;
+    font-weight: 400;
+    color: #48bb78;
+    margin-left: auto;
+    margin-top: 16px;
 }
