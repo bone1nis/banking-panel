@@ -274,7 +274,6 @@ main {
 
 .sidebar__menu h1 {
     margin-left: 10px;
-    font-family: Helvetica;
     font-size: 12px;
     line-height: 18px;
     letter-spacing: 0%;
@@ -287,7 +286,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: Helvetica;
     font-size: 14px;
     line-height: 19.6px;
     letter-spacing: 0%;
@@ -536,7 +534,6 @@ main {
 }
 
 .card-number {
-    font-family: 'Helvetica';
     font-size: 14px;
     line-height: 140%;
     color: #A0AEC0;
@@ -632,7 +629,6 @@ main {
 }
 
 .count-count {
-    font-family: 'Helvetica';
     font-size: 12px;
     line-height: 150%;
     text-align: right;
