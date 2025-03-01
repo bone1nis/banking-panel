@@ -459,12 +459,14 @@ main {
     width: 990px;
     border-radius: 20px;
     padding: 24px;
+    line-height: 140%;
+    color: #A0AEC0;
     background-color: #fff;
 }
 
-.pay-container {
+.pay-method__header {
     width: 100%;
-    padding-bottom: 1.7em;
+    margin-bottom: 23px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -507,60 +509,84 @@ main {
     text-decoration: none;
 }
 
-.bank-conainer {
+.pay-method__container {
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 24.5px;
     width: 100%;
 }
 
 .pay-method__input {
-    width: 486px;
-    height: 45px;
+    width: 458.5px;
+    height: 65px;
     border: 1px #E2E8F0 solid;
     padding: 5px 10px;
     border-radius: 8px;
     position: relative;
+    padding: 22.75px 56px;
 }
-.pay-method__input::before {
-    content: "буква";
-    width: 200px;
-    height: 200px;
+
+.pay-method__master-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.pay-method__master-wrapper::before {
+    content: "";
+    width: 26px;
+    height: 13px;
     position: absolute;
-    background-image: url(./resources/images/pay-method/master-card.svg);
-    background-repeat: no-repeat;
-    left: 0;
-    top: 5px;
     z-index: 1000;
+    background-image: url(./resources/images/pay-method/master-card.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 20px;
+    top: 26px;
 }
 
-.bank-container-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-
+.pay-method__master-wrapper::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    z-index: 1000;
+    background-image: url(./resources/images/pay-method/pen.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 19px;
+    top: 26.5px;
 }
 
-.bank-list-info {
-    border-radius: 8px;
-    border: 1px #E2E8F0 solid;
-    width: 486px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    padding: 0.5em;
+.pay-method__visa-wrapper {
+    display: inline-block;
+    position: relative;
 }
 
-.card-number {
-    font-size: 14px;
-    line-height: 140%;
-    color: #A0AEC0;
+.pay-method__visa-wrapper::before {
+    content: "";
+    width: 24.5px;
+    height: 8.5px;
+    position: absolute;
+    z-index: 1000;
+    background-image: url(./resources/images/pay-method/visa.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 20px;
+    top: 28px;
 }
 
-
+.pay-method__visa-wrapper::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    z-index: 1000;
+    background-image: url(./resources/images/pay-method/pen.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 19px;
+    top: 26.5px;
+}
 
 /* Счета */
 .count {
@@ -666,12 +692,6 @@ main {
 
 .count-item {
     padding-bottom: 24.5px;
-}
-
-.card-input {
-    line-height: 140%;
-    color: #A0AEC0;
-    border: none;
 }
 
 
