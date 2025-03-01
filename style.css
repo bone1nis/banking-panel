@@ -64,7 +64,7 @@ header {
     margin-bottom: 37.5px;
 }
 
-.header-nav-actions {
+.header-nav__actions {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,24 +81,24 @@ header {
     height: 44.5px;
 }
 
-.header-nav-info {
+.header-nav__info {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.header-nav-subtitle {
+.header-nav__subtitle {
     font-size: 12px;
     line-height: 150%;
 }
 
-.header-nav-title {
+.header-nav__title {
     font-size: 14px;
     line-height: 140%;
     font-weight: bold;
 }
 
-.header-input-box {
+.search-field {
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -108,7 +108,7 @@ header {
     height: 40px;
 }
 
-.header-input {
+.search-field__input {
     border: none;
     font-size: 12px;
     line-height: 150%;
@@ -130,7 +130,7 @@ footer {
     gap: 36px;
 }
 
-.footer-link {
+.footer-nav__link {
     font-size: 12px;
     line-height: 150%;
     color: #a0aec0;
