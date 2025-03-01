@@ -23,7 +23,7 @@
             <a href="#">
               <img src="./resources/images/people.svg" alt="Личный кабинет" />
             </a>
-            <a href="#">Войти</a>
+            <a href="#" title="Перейти в личный кабинет">Войти</a>
           </div>
           <a href="#">
             <img src="./resources/images/gear.svg" alt="Настройки" />
@@ -36,11 +36,11 @@
     </header>
 
     <main>
-      <div class="app-bar">2</div>
-      <div class="info">
-        <div class="info__payment-account payment-account-info">
+      <aside class="dashboard">2</aside>
+      <div class="content">
+        <div class="content__main">
           <div class="payment-info">
-            <div class="account-info">тут карточка зп и счет</div>
+            <section class="account-info">тут карточка зп и счет</section>
             <section class="pay-method">
               <div class="pay-container">
                 <p class="pay-method-box">Способ оплаты</p>
@@ -178,9 +178,9 @@
             </ul>
           </section>
         </div>
-        <div class="info__invoice-transactions invoice-transactions-info">
-          <div class="count-info">счета</div>
-          <div class="transactions-info">транзакции</div>
+        <div class="content__secondary">
+          <section class="count-info">счета</section>
+          <section class="transactions-info">транзакции</section>
         </div>
       </div>
     </main>

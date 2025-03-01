@@ -142,8 +142,8 @@ main {
     display: flex;
 }
 
-/* Control panel */
-.app-bar {
+/* Dashboard panel */
+.dashboard {
     min-width: 265px;
     height: 727px;
     margin-right: 19px;
@@ -153,15 +153,15 @@ main {
 }
 
 
-/* Info */
-.info {
+/* Content */
+.content {
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
 /* Верхний блок со счетами, способом оплаты, счетами, карточками */
-.payment-account-info {
+.content__main {
     display: flex;
     gap: 22px;
     height: 436px;
@@ -185,7 +185,7 @@ main {
 
 
 /* Нижний блок с выставлеными счетами, транзакциями */
-.invoice-transactions-info {
+.content__secondary {
     width: 1584px;
     height: 538px;
     display: flex;
