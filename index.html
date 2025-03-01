@@ -16,31 +16,127 @@
         </div>
         <div class="header-nav__actions">
           <div class="search-field">
-            <img src="./resources/images/lupa.svg" alt="Поиск" />
-            <input class="search-field__input" type="text" placeholder="Введите" />
+            <img src="./resources/images/header/lupa.svg" alt="Поиск" />
+            <input
+              class="search-field__input"
+              type="text"
+              placeholder="Введите"
+            />
           </div>
           <div>
             <a href="#">
-              <img src="./resources/images/people.svg" alt="Личный кабинет" />
+              <img
+                src="./resources/images/header/people.svg"
+                alt="Личный кабинет"
+              />
             </a>
             <a href="#" title="Перейти в личный кабинет">Войти</a>
           </div>
           <a href="#">
-            <img src="./resources/images/gear.svg" alt="Настройки" />
+            <img src="./resources/images/header/gear.svg" alt="Настройки" />
           </a>
           <a href="#">
-            <img src="./resources/images/bell.svg" alt="Уведомления" />
+            <img src="./resources/images/header/bell.svg" alt="Уведомления" />
           </a>
         </div>
       </nav>
     </header>
 
     <main>
-      <aside class="dashboard">2</aside>
+      <div class="sidebar">
+        <div class="sidebar__menu">
+          <div class="sidebar__menu__sidebar">
+            <div class="sidebar__menu__sidebar__logo">
+              <img src="./resources/images/sidebar/house.png" alt="house" />
+            </div>
+            <span>Панель управления</span>
+          </div>
+          <div class="sidebar__menu__element">
+            <img src="./resources/images/sidebar/tabels.png" alt="table" />
+            <span>Таблицы</span>
+          </div>
+          <div class="sidebar__menu__element">
+            <img src="./resources/images/sidebar/card.png" alt="card" />
+            <span>Выставление счетов</span>
+          </div>
+          <div class="sidebar__menu__element">
+            <img src="./resources/images/sidebar/RTL.png" alt="RTL" />
+            <span>RTL</span>
+          </div>
+          <h1>СТРАНИЦЫ АККАУНТА</h1>
+          <div class="sidebar__menu__element">
+            <img src="./resources/images/sidebar/profile.png" alt="profile" />
+            <span>Профиль</span>
+          </div>
+          <div class="sidebar__menu__element">
+            <img src="./resources/images/sidebar/file.png" alt="file" />
+            <span>Войти</span>
+          </div>
+          <div class="sidebar__menu__element">
+            <img src="./resources/images/sidebar/rocket.png" alt="rocket" />
+            <span>Зарегестрироваться</span>
+          </div>
+        </div>
+        <div class="sidebar__help">
+          <img src="./resources/images/sidebar/bigfile.png" alt="file" />
+          <span>Нужна помощь?</span>
+          <button class="sidebar__documentation-button">ДОКУМЕНТАЦИЯ</button>
+        </div>
+      </div>
       <div class="content">
         <div class="content__main">
           <div class="payment-info">
-            <section class="account-info">тут карточка зп и счет</section>
+            <section class="account-info">
+              <div class="credit-card">
+                <img
+                  class="credit-card__logo"
+                  src="./resources/images/credit-card/circles.png"
+                  alt="Circles"
+                />
+                <span class="credit-card__number">7812 2139 0823 XXXX</span>
+                <div class="credit-card__bottom">
+                  <div class="credit-card__date-block">
+                    <span class="credit-card__date-label">ДЕЙСТВИТЕЛЕН ДО</span>
+                    <span class="credit-card__date">05/24</span>
+                  </div>
+                  <div class="credit-card__cvv-block">
+                    <span class="credit-card__cvv-label">CVV</span
+                    ><span class="credit-card__cvv">09X</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="salary">
+                <div class="salary__logo">
+                  <img src="./resources/images/salary/logo.png" alt="wallet" />
+                </div>
+                <h1>Зарплата</h1>
+                <h2>Интерактивное принадлежащее</h2>
+                <img
+                  class="line"
+                  src="./resources/images/line.png"
+                  alt="line"
+                />
+                <span class="salary__amount">+ 20.000₽</span>
+              </div>
+
+              <div class="paypal">
+                <div class="paypal__logo">
+                  <img
+                    src="./resources/images/paypal/logo.png"
+                    alt="paypal logo"
+                  />
+                </div>
+                <h1>Счет</h1>
+                <h2>Фриланс</h2>
+                <img
+                  class="line"
+                  src="./resources/images/line.png"
+                  alt="line"
+                />
+                <span class="paypal__balance">455.00₽</span>
+              </div>
+            </section>
             <section class="pay-method">
               <div class="pay-container">
                 <p class="pay-method-box">Способ оплаты</p>
@@ -51,7 +147,12 @@
               <div class="bank-conainer">
                 <div class="bank-list-info">
                   <ul class="bank-container-list">
-                    <li><img src="./resources/images/master-card.svg" alt="Мастер Кард" /></li>
+                    <li>
+                      <img
+                        src="./resources/images/pay-method/master-card.svg"
+                        alt="Мастер Кард"
+                      />
+                    </li>
                     <li class="card-number">
                       <input
                         class="card-input"
@@ -60,13 +161,21 @@
                       />
                     </li>
                     <li>
-                      <img src="./resources/images/pen.svg" alt="Иконка редактирования" />
+                      <img
+                        src="./resources/images/pay-method/pen.svg"
+                        alt="Иконка редактирования"
+                      />
                     </li>
                   </ul>
                 </div>
                 <div class="bank-list-info">
                   <ul class="bank-container-list">
-                    <li><img src="./resources/images/visa.svg" alt="Карта Виса" /></li>
+                    <li>
+                      <img
+                        src="./resources/images/pay-method/visa.svg"
+                        alt="Карта Виса"
+                      />
+                    </li>
                     <li class="card-number">
                       <input
                         class="card-input"
@@ -75,7 +184,10 @@
                       />
                     </li>
                     <li>
-                      <img src="./resources/images/pen.svg" alt="Иконка редактирования" />
+                      <img
+                        src="./resources/images/pay-method/pen.svg"
+                        alt="Иконка редактирования"
+                      />
                     </li>
                   </ul>
                 </div>
@@ -100,7 +212,7 @@
                     <p class="count-count">₽180</p>
                     <img
                       class="count-image"
-                      src="./resources/images/file.svg"
+                      src="./resources/images/count/file.svg"
                       alt="Скачать счет"
                     />
                     <p class="count-pdf-info">PDF</p>
@@ -117,7 +229,7 @@
                     <p class="count-count">₽250</p>
                     <img
                       class="count-image"
-                      src="./resources/images/file.svg"
+                      src="./resources/images/count/file.svg"
                       alt="Скачать счет"
                     />
                     <p class="count-pdf-info">PDF</p>
@@ -134,7 +246,7 @@
                     <p class="count-count">₽560</p>
                     <img
                       class="count-image"
-                      src="./resources/images/file.svg"
+                      src="./resources/images/count/file.svg"
                       alt="Скачать счет"
                     />
                     <p class="count-pdf-info">PDF</p>
@@ -151,7 +263,7 @@
                     <p class="count-count">₽120</p>
                     <img
                       class="count-image"
-                      src="./resources/images/file.svg"
+                      src="./resources/images/count/file.svg"
                       alt="Скачать счет"
                     />
                     <p class="count-pdf-info">PDF</p>
@@ -168,7 +280,7 @@
                     <p class="count-count">₽300</p>
                     <img
                       class="count-image"
-                      src="./resources/images/file.svg"
+                      src="./resources/images/count/file.svg"
                       alt="Скачать счет"
                     />
                     <p class="count-pdf-info">PDF</p>
