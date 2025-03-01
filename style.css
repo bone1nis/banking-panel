@@ -436,11 +436,6 @@ main {
     text-align: center;
 }
 
-.line {
-    width: 172px;
-    height: 3px;
-}
-
 .salary__amount,
 .paypal__balance {
     margin-top: 15px;
@@ -448,6 +443,12 @@ main {
     line-height: 25.2px;
     text-align: center;
     color: #2D3748;
+}
+
+.line {
+    width: 172px;
+    height: 3px;
+    background-color: #2D3748;
 }
 
 
@@ -511,6 +512,26 @@ main {
     flex-direction: row;
     gap: 15px;
     width: 100%;
+}
+
+.pay-method__input {
+    width: 486px;
+    height: 45px;
+    border: 1px #E2E8F0 solid;
+    padding: 5px 10px;
+    border-radius: 8px;
+    position: relative;
+}
+.pay-method__input::before {
+    content: "буква";
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background-image: url(./resources/images/pay-method/master-card.svg);
+    background-repeat: no-repeat;
+    left: 0;
+    top: 5px;
+    z-index: 1000;
 }
 
 .bank-container-list {
