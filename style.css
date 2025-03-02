@@ -19,7 +19,7 @@
 }
 
 body {
-    margin: 0;
+    font-weight: bold;
     font-family: "Helvetica", sans-serif;
     padding: 44px 32px 20px 20px;
     min-height: 100vh;
@@ -28,33 +28,25 @@ body {
     background-repeat: no-repeat;
 }
 
-p {
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
-}
 
 a {
-    font-weight: 400;
     color: #fff;
     text-decoration: none;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
+button {
+    font-family: "Helvetica", sans-serif;
+    border: none;
+    transition: 0.3s all ease;
+    cursor: pointer;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 700;
-    color: #000;
-    margin: 0;
-    padding: 0;
+button:hover {
+    opacity: 0.8;
+}
+
+input:focus {
+    outline: none;
 }
 
 /* Header */
@@ -88,6 +80,7 @@ header {
 }
 
 .header-nav__subtitle {
+    font-weight: normal;
     font-size: 12px;
     line-height: 150%;
 }
@@ -95,24 +88,36 @@ header {
 .header-nav__title {
     font-size: 14px;
     line-height: 140%;
-    font-weight: bold;
 }
 
 .search-field {
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #FFFFFF;
-    width: 200px;
-    height: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+.search-field::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 11px;
+    left: 11.25px;
+    background-image: url(./resources/images/header/lupa.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .search-field__input {
-    border: none;
+    display: block;
+    border: 0.50px solid #e2e8f0;
+    border-radius: 8px;
+    width: 199px;
+    height: 39px;
+    background: #fff;
     font-size: 12px;
     line-height: 150%;
-    color: #A0AEC0;
+    color: #a0aec0;
+    padding: 10.75px 13.5px 10.75px 37.5px;
 }
 
 /* Footer */
@@ -131,6 +136,7 @@ footer {
 }
 
 .footer-nav__link {
+    font-weight: normal;
     font-size: 12px;
     line-height: 150%;
     color: #a0aec0;
@@ -204,7 +210,7 @@ main {
 }
 
 /* Транзакции */
-.tranzactions-info {
+.transactions-info {
     padding: 28px 21px 0 21px;
     width: 660px;
     height: 538px;
@@ -223,40 +229,34 @@ main {
     flex-direction: column;
 }
 
-.sidebar__menu__dashboard {
-    width: 219.5px;
-    height: 51px;
+.sidebar__title-wrapper {
+    width: 219px;
+    height: 54px;
+    padding: 12px 16px;
     border-radius: 8px;
-    display: inline;
-    background: #FFFFFF;
-    box-shadow: 0px 5px 14px 0px #0000000D;
+    box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.05);
+    background: #fff;
     display: flex;
     align-items: center;
+    gap: 12px;
 }
 
-.sidebar__menu__dashboard span {
+.sidebar__title {
     font-size: 12px;
-    color: #2D3748;
+    line-height: 150%;
+    color: #2d3748;
 }
 
-.sidebar__menu__dashboard__logo {
+.sidebar__title_custom {
+    margin-left: 13px;
+}
+
+.sidebar__title-icon {
     width: 30px;
-    margin: 10px 8px 10px 10px;
     height: 30px;
-    border-radius: 8px;
-    background: #3182CE;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.sidebar__menu__dashboard__logo img {
-    object-fit: contain;
-    width: 15px;
-    height: 15px;
-}
-
-.sidebar__menu__element {
+.sidebar__item {
     margin: 20px 0px 20px 18px;
     display: flex;
     align-items: center;
@@ -266,18 +266,18 @@ main {
     color: #A0AEC0;
 }
 
-.sidebar__menu__element img {
+
+.sidebar__subtitle {
+    margin-left: 10px;
+    font-size: 12px;
+    line-height: 150%;
+    color: #a0aec0;
+}
+
+.sidebar__item-img {
     width: 15px;
     height: 15px;
     margin-right: 15px;
-}
-
-.sidebar__menu h1 {
-    margin-left: 10px;
-    font-size: 12px;
-    line-height: 18px;
-    letter-spacing: 0%;
-    color: #2D3748;
 }
 
 .sidebar__help {
@@ -292,11 +292,12 @@ main {
     color: #2D3748;
 }
 
-.sidebar__help img {
+.sidebar__help-img {
     height: 145px;
 }
 
-.sidebar__help button {
+.sidebar__help-button {
+    text-transform: uppercase;
     width: 186px;
     min-height: 35px;
     margin-top: 40px;
@@ -310,6 +311,12 @@ main {
     letter-spacing: 0%;
     text-align: center;
     color: #FFFFFF;
+}
+
+.sidebar__help-title {
+    font-size: 14px;
+    line-height: 140%;
+    color: #2d3748;
 }
 
 /* Credit-card */
@@ -485,7 +492,6 @@ main {
 .pay-method__title {
     font-size: 13px;
     color: #2D3748;
-    font-weight: bold;
 }
 
 .pay-method__container {
@@ -502,6 +508,7 @@ main {
     padding: 5px 10px;
     border-radius: 8px;
     position: relative;
+    color: #a0aec0;
     padding: 22.75px 56px;
 }
 
@@ -591,7 +598,6 @@ main {
     font-size: 17px;
     line-height: 140%;
     color: #2D3748;
-    font-weight: bold;
 }
 
 .count__btn {
@@ -603,7 +609,6 @@ main {
     height: 35px;
     font-size: 8px;
     line-height: 150%;
-    font-weight: bold;
     color: #3182ce;
     background-color: #fff;
 }
@@ -613,8 +618,8 @@ main {
     flex-direction: column;
     gap: 4px;
 }
+
 .count__date {
-    font-weight: bold;
     font-size: 13px;
     line-height: 140%;
     color: #2D3748;
@@ -624,7 +629,6 @@ main {
     font-size: 12px;
     line-height: 150%;
     color: #A0AEC0;
-    font-weight: bold;
 }
 
 .count__item-secondary {
@@ -649,7 +653,6 @@ main {
     color: #2D3748;
     display: flex;
     align-items: center;
-    font-weight: bold;
 }
 
 .count-image {
@@ -671,7 +674,6 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    font-weight: bold;
 }
 
 .count__price {
@@ -679,14 +681,12 @@ main {
     line-height: 150%;
     text-align: right;
     color: #A0AEC0;
-    font-weight: bold;
 }
 
 /* info-sums */
 
-.info-sums-h {
+.info-sums__title {
     font-size: 18px;
-    font-weight: 400;
     line-height: 25.2px;
     margin-left: 21px;
     margin-top: 28px;
@@ -709,33 +709,48 @@ main {
     display: flex;
 }
 
-.info-sums-right {
+.info-sums__actions {
     display: flex;
     margin-left: auto;
+    align-items: center;
 }
 
-.info-sums-right-text {
+.info-sums__remove {
+    display: flex;
+    gap: 3.5px;
+    align-items: center;
+    margin-right: 13.5px;
+}
+
+.info-sums__link {
+    text-transform: uppercase;
     font-size: 10px;
-    font-weight: 400;
-    line-height: 15px;
     color: #e53e3e;
-    margin-left: 3.5px;
-    margin-right: 12px;
-    top: 5px;
+    display: flex;
+    align-items: center;
 }
 
-.info-sums-name {
+.info-sums__remove-icon {
+    width: 9px;
+    height: 12px;
+}
+
+.info-sums__edit-icon {
+    width: 9px;
+    height: 9px;
+}
+
+.info-sums__name {
     font-size: 14px;
-    font-weight: 400;
     line-height: 19.6px;
     color: #718096;
 }
 
-.info-sums-text {
+.info-sums__text {
+    font-weight: normal;
     width: 266px;
     margin-top: 7px;
     font-size: 12px;
-    font-weight: 400;
     line-height: 18px;
     color: #a0aec0;
 }
@@ -748,65 +763,61 @@ main {
     color: #fff;
 }
 
-.tranzactions-header {
+.transactions-header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 17.5px;
 }
 
-.tranzactions-header-left {
+.transactions-header__title {
     font-size: 18px;
-    font-weight: 500;
     color: #2d3748;
 }
 
-.tranzactions-header-right {
+.transactions-header__subtitle {
     display: flex;
+    align-items: center;
     gap: 6px;
     color: #a0aec0;
     margin-top: 4px;
 }
 
-.tranzactions-time-text {
+.transactions-time-text {
     font-size: 10px;
-    font-weight: 400;
     line-height: 15px;
     color: #a0aec0;
     margin-bottom: 17.5px;
 }
 
-.tranzactions-block-up {
+.transactions-block-up {
     display: flex;
     margin-bottom: 24px;
 }
 
-.tranzactions-block-down {
+.transactions-block-down {
     display: flex;
     margin-bottom: 24px;
 }
 
-.tranzactions-block-text {
+.transactions-block-text {
     margin-left: 14px;
     margin-top: 4px;
 }
 
-.tranzactions-title-text-up {
+.transactions-title-text-up {
     font-size: 14px;
-    font-weight: 400;
     color: #2d3748;
     margin-bottom: 5px;
 }
 
-.tranzactions-title-text-down {
+.transactions-title-text-down {
     font-size: 12px;
-    font-weight: 400;
     line-height: 18px;
     color: #a0aec0;
 }
 
 .price-down {
     font-size: 14px;
-    font-weight: 400;
     color: #e53e3e;
     margin-left: auto;
     margin-top: 16px;
@@ -814,7 +825,6 @@ main {
 
 .price-midle {
     font-size: 14px;
-    font-weight: 400;
     line-height: 19.6px;
     text-align: right;
     text-underline-position: from-font;
@@ -826,7 +836,6 @@ main {
 
 .price-up {
     font-size: 14px;
-    font-weight: 400;
     color: #48bb78;
     margin-left: auto;
     margin-top: 16px;
