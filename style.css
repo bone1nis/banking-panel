@@ -312,7 +312,7 @@ main {
     color: #FFFFFF;
 }
 
-/* Карточка */
+/* Credit-card */
 
 .credit-card {
     position: relative;
@@ -372,7 +372,7 @@ main {
 
 
 
-/* Зарплата, Paypal */
+/* Salary, Paypal */
 .salary,
 .paypal {
     width: 240px;
@@ -398,11 +398,11 @@ main {
     align-items: center;
 }
 
-.salary__logo img {
+.salary__icon {
     width: 26px;
 }
 
-.paypal__logo img {
+.paypal__icon {
     width: 17.22px;
 }
 
@@ -413,13 +413,10 @@ main {
     border-radius: 20px;
     background: #FFFFFF;
     box-shadow: 0px 5px 14px 0px #0000000D;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-.salary h1,
-.paypal h1 {
+.salary__title,
+.paypal__title {
     font-size: 18px;
     color: #2D3748;
     margin-top: 22px;
@@ -427,18 +424,16 @@ main {
     text-align: center;
 }
 
-.salary h2,
-.paypal h2 {
+.salary__subtitle,
+.paypal__subtitle {
     font-size: 12px;
     color: #A0AEC0;
-    margin-top: -8px;
+    margin-top: 3.5px;
     line-height: 18px;
-    text-align: center;
 }
 
 .salary__amount,
 .paypal__balance {
-    margin-top: 15px;
     font-size: 18px;
     line-height: 25.2px;
     text-align: center;
@@ -448,11 +443,15 @@ main {
 .line {
     width: 172px;
     height: 3px;
-    background-color: #2D3748;
+    background: url(./resources/images/line.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 13.5px 0;
 }
 
 
-/* Способ оплаты */
+/* Pay-method */
 .pay-method {
     box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.05);
     height: 172px;
@@ -472,41 +471,21 @@ main {
     justify-content: space-between;
 }
 
-.pay-method-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 112.5px;
-    height: 20px;
-    margin: 0;
-    font-size: 14px;
-    line-height: 140%;
+.pay-method__btn {
+    text-transform: uppercase;
+    border-radius: 8px;
+    padding: 0px 8px;
+    width: 134px;
+    height: 35px;
+    background: #2d3748;
+    font-size: 10px;
+    color: #fff;
+}
+
+.pay-method__title {
+    font-size: 13px;
     color: #2D3748;
     font-weight: bold;
-}
-
-.pay-button-box {
-    width: 135px;
-    height: 35px;
-    background-color: #2D3748;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-}
-
-.pay-button-link {
-    background-color: #2D3748;
-    border: none;
-    width: 89px;
-    height: 15px;
-    font-size: 10px;
-    line-height: 100%;
-    color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
 }
 
 .pay-method__container {
@@ -588,7 +567,7 @@ main {
     top: 26.5px;
 }
 
-/* Счета */
+/* Count */
 .count {
     box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.05);
     padding: 28px 21.5px 47.5px 24px;
@@ -598,69 +577,79 @@ main {
     background-color: #fff;
 }
 
-.count-container {
+.count__header {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 22.5px;
 }
 
-.count-method-box {
+.count__title {
     width: 112.5px;
     height: 20px;
-    margin: 0;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 140%;
     color: #2D3748;
+    font-weight: bold;
 }
 
-.count-link-box {
+.count__btn {
+    text-transform: uppercase;
+    border: 1.00px solid #3182ce;
+    border-radius: 8px;
+    padding: 0px 7px;
     width: 110px;
     height: 35px;
-    border: 1px solid #3182CE;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.count-link {
     font-size: 8px;
     line-height: 150%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #3182CE;
-    text-decoration: none;
+    font-weight: bold;
+    color: #3182ce;
+    background-color: #fff;
 }
 
-.count-box {
+.count__item-main {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-
+    flex-direction: column;
+    gap: 4px;
 }
-
-.count-pdf-info {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 5px;
-}
-
-.count-data {
-    margin: 0;
-    font-size: 14px;
+.count__date {
+    font-weight: bold;
+    font-size: 13px;
     line-height: 140%;
     color: #2D3748;
 }
 
-.count-material-info {
-    margin: 0;
+.count__number {
     font-size: 12px;
     line-height: 150%;
     color: #A0AEC0;
+    font-weight: bold;
+}
+
+.count__item-secondary {
+    width: 81px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.count__download {
+    width: 38px;
+    height: 15.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.count__download-link {
+    font-size: 10px;
+    line-height: 150%;
+    color: #2D3748;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
 }
 
 .count-image {
@@ -668,21 +657,7 @@ main {
     height: 15px;
 }
 
-.count-pdf-info {
-    font-family: 'Fraunces';
-    font-size: 10px;
-    line-height: 150%;
-    color: #2D3748;
-}
-
-.count-count {
-    font-size: 12px;
-    line-height: 150%;
-    text-align: right;
-    color: #A0AEC0;
-}
-
-.container-filling {
+.container__items {
     width: 100%;
     height: 308px;
     margin: 0;
@@ -690,10 +665,22 @@ main {
     list-style: none;
 }
 
-.count-item {
+.count__item {
     padding-bottom: 24.5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
 }
 
+.count__price {
+    font-size: 12px;
+    line-height: 150%;
+    text-align: right;
+    color: #A0AEC0;
+    font-weight: bold;
+}
 
 /* info-sums */
 

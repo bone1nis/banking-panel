@@ -97,30 +97,28 @@
 
             <div class="salary">
               <div class="salary__logo">
-                <img src="./resources/images/salary/logo.png" alt="wallet" />
+                <img class="salary__icon" src="./resources/images/salary/logo.png" alt="wallet" />
               </div>
-              <h1>Зарплата</h1>
-              <h2>Интерактивное принадлежащее</h2>
+              <h1 class="salary__title">Зарплата</h1>
+              <h2 class="salary__subtitle">Интерактивное принадлежащее</h2>
               <div class="line"></div>
               <span class="salary__amount">+ 20.000₽</span>
             </div>
 
             <div class="paypal">
               <div class="paypal__logo">
-                <img src="./resources/images/paypal/logo.png" alt="paypal logo" />
+                <img class="paypal__icon" src="./resources/images/paypal/logo.png" alt="paypal logo" />
               </div>
-              <h1>Счет</h1>
-              <h2>Фриланс</h2>
+              <h1 class="salary__title">Счет</h1>
+              <h2 class="salary__subtitle">Фриланс</h2>
               <div class="line"></div>
               <span class="paypal__balance">455.00₽</span>
             </div>
           </section>
           <section class="pay-method">
             <div class="pay-method__header">
-              <p class="pay-method-box">Способ оплаты</p>
-              <div class="pay-button-box">
-                <button class="pay-button-link" href="#">Добавить</button>
-              </div>
+              <p class="pay-method__title">Способ оплаты</p>
+              <input class="pay-method__btn" type="button" value="Добавить">
             </div>
             <div class="pay-method__container">
               <div class="pay-method__master-wrapper">
@@ -133,79 +131,87 @@
           </section>
         </div>
         <section class="count">
-          <div class="count-container">
-            <p class="count-method-box">Счета</p>
-            <div class="count-link-box">
-              <a class="count-link" href="#">Посмотреть все</a>
-            </div>
+          <div class="count__header">
+            <p class="count__title">Счета</p>
+            <input class="count__btn" type="button" value="Посмотреть все">
           </div>
-          <ul class="container-filling">
-            <li class="count-item">
-              <div class="count-box">
-                <div>
-                  <p class="count-data">Март, 01, 2020</p>
-                  <p class="count-material-info">#MS-415646</p>
+          <div class="container__items">
+              <div class="count__item">
+                <div class="count__item-main">
+                  <p class="count__date">Март, 01, 2020</p>
+                  <p class="count__number">#MS-415646</p>
                 </div>
-                <div class="count-pdf-info">
-                  <p class="count-count">₽180</p>
-                  <img class="count-image" src="./resources/images/count/file.svg" alt="Скачать счет" />
-                  <p class="count-pdf-info">PDF</p>
-                </div>
-              </div>
-            </li>
-            <li class="count-item">
-              <div class="count-box">
-                <div>
-                  <p class="count-data">Февраль, 10, 2021</p>
-                  <p class="count-material-info">#RV-126749</p>
-                </div>
-                <div class="count-pdf-info">
-                  <p class="count-count">₽250</p>
-                  <img class="count-image" src="./resources/images/count/file.svg" alt="Скачать счет" />
-                  <p class="count-pdf-info">PDF</p>
+                <div class="count__item-secondary">
+                  <p class="count__price">₽180</p>
+                  <div class="count__download">
+                    <a class="count__download-link" href="#">
+                      <img class="count-image" src="./resources/images/count/file.svg" alt="Скачать счет" />
+                    </a>
+                    <a class="count__download-link" href="#">PDF</a>
+                  </div>
                 </div>
               </div>
-            </li>
-            <li class="count-item">
-              <div class="count-box">
-                <div>
-                  <p class="count-data">Апрель, 05, 2020</p>
-                  <p class="count-material-info">#FB-212562</p>
+              <div class="count__item">
+                <div class="count__item-main">
+                  <p class="count__date">Февраль, 10, 2021</p>
+                  <p class="count__number">#RV-126749</p>
                 </div>
-                <div class="count-pdf-info">
-                  <p class="count-count">₽560</p>
-                  <img class="count-image" src="./resources/images/count/file.svg" alt="Скачать счет" />
-                  <p class="count-pdf-info">PDF</p>
-                </div>
-              </div>
-            </li>
-            <li class="count-item">
-              <div class="count-box">
-                <div>
-                  <p class="count-data">Июнь, 25, 2019</p>
-                  <p class="count-material-info">#QW-103578</p>
-                </div>
-                <div class="count-pdf-info">
-                  <p class="count-count">₽120</p>
-                  <img class="count-image" src="./resources/images/count/file.svg" alt="Скачать счет" />
-                  <p class="count-pdf-info">PDF</p>
+                <div class="count__item-secondary">
+                  <p class="count__price">₽250</p>
+                  <div class="count__download">
+                    <a class="count__download-link" href="#">
+                      <img class="count-image" src="./resources/images/count/file.svg" alt="Скачать счет" />
+                    </a>
+                    <a class="count__download-link" href="#">PDF</a>
+                  </div>
                 </div>
               </div>
-            </li>
-            <li class="count-item">
-              <div class="count-box">
-                <div>
-                  <p class="count-data">Март, 01, 2019</p>
-                  <p class="count-material-info">#AR-803481</p>
+              <div class="count__item">
+                <div class="count__item-main">
+                  <p class="count__date">Апрель, 05, 2020</p>
+                  <p class="count__number">#FB-212562</p>
                 </div>
-                <div class="count-pdf-info">
-                  <p class="count-count">₽300</p>
-                  <img class="count-image" src="./resources/images/count/file.svg" alt="Скачать счет" />
-                  <p class="count-pdf-info">PDF</p>
+                <div class="count__item-secondary">
+                  <p class="count__price">₽560</p>
+                  <div class="count__download">
+                    <a class="count__download-link" href="#">
+                      <img class="count-image" src="./resources/images/count/file.svg" alt="Скачать счет" />
+                    </a>
+                    <a class="count__download-link" href="#">PDF</a>
+                  </div>
                 </div>
               </div>
-            </li>
-          </ul>
+              <div class="count__item">
+                <div class="count__item-main">
+                  <p class="count__date">Июнь, 25, 2019</p>
+                  <p class="count__number">#QW-103578</p>
+                </div>
+                <div class="count__item-secondary">
+                  <p class="count__price">₽120</p>
+                  <div class="count__download">
+                    <a class="count__download-link" href="#">
+                      <img class="count-image" src="./resources/images/count/file.svg" alt="Скачать счет" />
+                    </a>
+                    <a class="count__download-link" href="#">PDF</a>
+                  </div>
+                </div>
+              </div>
+              <div class="count__item">
+                <div class="count__item-main">
+                  <p class="count__date">Март, 01, 2019</p>
+                  <p class="count__number">#AR-803481</p>
+                </div>
+                <div class="count__item-secondary">
+                  <p class="count__price">₽300</p>
+                  <div class="count__download">
+                    <a class="count__download-link" href="#">
+                      <img class="count-image" src="./resources/images/count/file.svg" alt="Скачать счет" />
+                    </a>
+                    <a class="count__download-link" href="#">PDF</a>
+                  </div>
+                </div>
+              </div>
+          </div>
         </section>
       </div>
       <div class="content__secondary">
