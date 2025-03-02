@@ -1,441 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>maket</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <header>
-      <nav class="header-nav">
-        <div class="header-nav__info">
-          <p class="header-nav__subtitle">Страницы / Выставление счетов</p>
-          <p class="header-nav__title">Выставление счетов</p>
-        </div>
-        <div class="header-nav__actions">
-          <div class="search-field">
-            <img src="./resources/images/header/lupa.svg" alt="Поиск" />
-            <input
-              class="search-field__input"
-              type="text"
-              placeholder="Введите"
-            />
-          </div>
-          <div>
-            <a href="#">
-              <img
-                src="./resources/images/header/people.svg"
-                alt="Личный кабинет"
-              />
-            </a>
-            <a href="#" title="Перейти в личный кабинет">Войти</a>
-          </div>
-          <a href="#">
-            <img src="./resources/images/header/gear.svg" alt="Настройки" />
-          </a>
-          <a href="#">
-            <img src="./resources/images/header/bell.svg" alt="Уведомления" />
-          </a>
-        </div>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>maket</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <main>
-      <div class="sidebar">
-        <div class="sidebar__menu">
-          <div class="sidebar__menu__sidebar">
-            <div class="sidebar__menu__sidebar__logo">
-              <img src="./resources/images/sidebar/house.png" alt="house" />
-            </div>
-            <span>Панель управления</span>
-          </div>
-          <div class="sidebar__menu__element">
-            <img src="./resources/images/sidebar/tabels.png" alt="table" />
-            <span>Таблицы</span>
-          </div>
-          <div class="sidebar__menu__element">
-            <img src="./resources/images/sidebar/card.png" alt="card" />
-            <span>Выставление счетов</span>
-          </div>
-          <div class="sidebar__menu__element">
-            <img src="./resources/images/sidebar/RTL.png" alt="RTL" />
-            <span>RTL</span>
-          </div>
-          <h1>СТРАНИЦЫ АККАУНТА</h1>
-          <div class="sidebar__menu__element">
-            <img src="./resources/images/sidebar/profile.png" alt="profile" />
-            <span>Профиль</span>
-          </div>
-          <div class="sidebar__menu__element">
-            <img src="./resources/images/sidebar/file.png" alt="file" />
-            <span>Войти</span>
-          </div>
-          <div class="sidebar__menu__element">
-            <img src="./resources/images/sidebar/rocket.png" alt="rocket" />
-            <span>Зарегестрироваться</span>
-          </div>
+<body>
+  <header>
+    <nav class="header-nav">
+      <div class="header-nav__info">
+        <p class="header-nav__subtitle">Страницы / Выставление счетов</p>
+        <p class="header-nav__title">Выставление счетов</p>
+      </div>
+      <div class="header-nav__actions">
+        <div class="search-field">
+          <img src="./resources/images/header/lupa.svg" alt="Поиск" />
+          <input class="search-field__input" type="text" placeholder="Введите" />
         </div>
-        <div class="sidebar__help">
-          <img src="./resources/images/sidebar/bigfile.png" alt="file" />
-          <span>Нужна помощь?</span>
-          <button class="sidebar__documentation-button">ДОКУМЕНТАЦИЯ</button>
+        <div>
+          <a href="#">
+            <img src="./resources/images/header/people.svg" alt="Личный кабинет" />
+          </a>
+          <a href="#" title="Перейти в личный кабинет">Войти</a>
+        </div>
+        <a href="#">
+          <img src="./resources/images/header/gear.svg" alt="Настройки" />
+        </a>
+        <a href="#">
+          <img src="./resources/images/header/bell.svg" alt="Уведомления" />
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="sidebar">
+      <div class="sidebar__menu">
+        <div class="sidebar__menu__sidebar">
+          <div class="sidebar__menu__sidebar__logo">
+            <img src="./resources/images/sidebar/house.png" alt="house" />
+          </div>
+          <span>Панель управления</span>
+        </div>
+        <div class="sidebar__menu__element">
+          <img src="./resources/images/sidebar/tabels.png" alt="table" />
+          <span>Таблицы</span>
+        </div>
+        <div class="sidebar__menu__element">
+          <img src="./resources/images/sidebar/card.png" alt="card" />
+          <span>Выставление счетов</span>
+        </div>
+        <div class="sidebar__menu__element">
+          <img src="./resources/images/sidebar/RTL.png" alt="RTL" />
+          <span>RTL</span>
+        </div>
+        <h1>СТРАНИЦЫ АККАУНТА</h1>
+        <div class="sidebar__menu__element">
+          <img src="./resources/images/sidebar/profile.png" alt="profile" />
+          <span>Профиль</span>
+        </div>
+        <div class="sidebar__menu__element">
+          <img src="./resources/images/sidebar/file.png" alt="file" />
+          <span>Войти</span>
+        </div>
+        <div class="sidebar__menu__element">
+          <img src="./resources/images/sidebar/rocket.png" alt="rocket" />
+          <span>Зарегестрироваться</span>
         </div>
       </div>
-      <div class="content">
-        <div class="content__main">
-          <div class="payment-info">
-            <section class="account-info">
-              <div class="credit-card">
-                <img
-                  class="credit-card__logo"
-                  src="./resources/images/credit-card/circles.png"
-                  alt="Circles"
-                />
-                <span class="credit-card__number">7812 2139 0823 XXXX</span>
-                <div class="credit-card__bottom">
-                  <div class="credit-card__date-block">
-                    <span class="credit-card__date-label">ДЕЙСТВИТЕЛЕН ДО</span>
-                    <span class="credit-card__date">05/24</span>
-                  </div>
-                  <div class="credit-card__cvv-block">
-                    <span class="credit-card__cvv-label">CVV</span
-                    ><span class="credit-card__cvv">09X</span>
-                  </div>
+      <div class="sidebar__help">
+        <img src="./resources/images/sidebar/bigfile.png" alt="file" />
+        <span>Нужна помощь?</span>
+        <button class="sidebar__documentation-button">ДОКУМЕНТАЦИЯ</button>
+      </div>
+    </div>
+    <div class="content">
+      <div class="content__main">
+        <div class="payment-info">
+          <section class="account-info">
+            <div class="credit-card">
+              <img class="credit-card__logo" src="./resources/images/credit-card/circles.png" alt="Circles" />
+              <span class="credit-card__number">7812 2139 0823 XXXX</span>
+              <div class="credit-card__bottom">
+                <div class="credit-card__date-block">
+                  <span class="credit-card__date-label">ДЕЙСТВИТЕЛЕН ДО</span>
+                  <span class="credit-card__date">05/24</span>
                 </div>
-              </div>
-
-              <div class="salary">
-                <div class="salary__logo">
-                  <img src="./resources/images/salary/logo.png" alt="wallet" />
+                <div class="credit-card__cvv-block">
+                  <span class="credit-card__cvv-label">CVV</span><span class="credit-card__cvv">09X</span>
                 </div>
-                <h1>Зарплата</h1>
-                <h2>Интерактивное принадлежащее</h2>
-                <img
-                  class="line"
-                  src="./resources/images/line.png"
-                  alt="line"
-                />
-                <span class="salary__amount">+ 20.000₽</span>
-              </div>
-
-              <div class="paypal">
-                <div class="paypal__logo">
-                  <img
-                    src="./resources/images/paypal/logo.png"
-                    alt="paypal logo"
-                  />
-                </div>
-                <h1>Счет</h1>
-                <h2>Фриланс</h2>
-                <img
-                  class="line"
-                  src="./resources/images/line.png"
-                  alt="line"
-                />
-                <span class="paypal__balance">455.00₽</span>
-              </div>
-            </section>
-            <section class="pay-method">
-              <div class="pay-container">
-                <p class="pay-method-box">Способ оплаты</p>
-                <div class="pay-button-box">
-                  <button class="pay-button-link" href="#">Добавить</button>
-                </div>
-              </div>
-              <div class="bank-conainer">
-                <div class="bank-list-info">
-                  <ul class="bank-container-list">
-                    <li>
-                      <img
-                        src="./resources/images/pay-method/master-card.svg"
-                        alt="Мастер Кард"
-                      />
-                    </li>
-                    <li class="card-number">
-                      <input
-                        class="card-input"
-                        type="text"
-                        placeholder="7812 2139 0823 XXXX"
-                      />
-                    </li>
-                    <li>
-                      <img
-                        src="./resources/images/pay-method/pen.svg"
-                        alt="Иконка редактирования"
-                      />
-                    </li>
-                  </ul>
-                </div>
-                <div class="bank-list-info">
-                  <ul class="bank-container-list">
-                    <li>
-                      <img
-                        src="./resources/images/pay-method/visa.svg"
-                        alt="Карта Виса"
-                      />
-                    </li>
-                    <li class="card-number">
-                      <input
-                        class="card-input"
-                        type="text"
-                        placeholder="7812 2139 0823 XXXX"
-                      />
-                    </li>
-                    <li>
-                      <img
-                        src="./resources/images/pay-method/pen.svg"
-                        alt="Иконка редактирования"
-                      />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </section>
-          </div>
-          <section class="count">
-            <div class="count-container">
-              <p class="count-method-box">Счета</p>
-              <div class="count-link-box">
-                <a class="count-link" href="#">Посмотреть все</a>
               </div>
             </div>
-            <ul class="container-filling">
-              <li class="count-item">
-                <div class="count-box">
-                  <div>
-                    <p class="count-data">Март, 01, 2020</p>
-                    <p class="count-material-info">#MS-415646</p>
-                  </div>
-                  <div class="count-pdf-info">
-                    <p class="count-count">₽180</p>
-                    <img
-                      class="count-image"
-                      src="./resources/images/count/file.svg"
-                      alt="Скачать счет"
-                    />
-                    <p class="count-pdf-info">PDF</p>
-                  </div>
-                </div>
-              </li>
-              <li class="count-item">
-                <div class="count-box">
-                  <div>
-                    <p class="count-data">Февраль, 10, 2021</p>
-                    <p class="count-material-info">#RV-126749</p>
-                  </div>
-                  <div class="count-pdf-info">
-                    <p class="count-count">₽250</p>
-                    <img
-                      class="count-image"
-                      src="./resources/images/count/file.svg"
-                      alt="Скачать счет"
-                    />
-                    <p class="count-pdf-info">PDF</p>
-                  </div>
-                </div>
-              </li>
-              <li class="count-item">
-                <div class="count-box">
-                  <div>
-                    <p class="count-data">Апрель, 05, 2020</p>
-                    <p class="count-material-info">#FB-212562</p>
-                  </div>
-                  <div class="count-pdf-info">
-                    <p class="count-count">₽560</p>
-                    <img
-                      class="count-image"
-                      src="./resources/images/count/file.svg"
-                      alt="Скачать счет"
-                    />
-                    <p class="count-pdf-info">PDF</p>
-                  </div>
-                </div>
-              </li>
-              <li class="count-item">
-                <div class="count-box">
-                  <div>
-                    <p class="count-data">Июнь, 25, 2019</p>
-                    <p class="count-material-info">#QW-103578</p>
-                  </div>
-                  <div class="count-pdf-info">
-                    <p class="count-count">₽120</p>
-                    <img
-                      class="count-image"
-                      src="./resources/images/count/file.svg"
-                      alt="Скачать счет"
-                    />
-                    <p class="count-pdf-info">PDF</p>
-                  </div>
-                </div>
-              </li>
-              <li class="count-item">
-                <div class="count-box">
-                  <div>
-                    <p class="count-data">Март, 01, 2019</p>
-                    <p class="count-material-info">#AR-803481</p>
-                  </div>
-                  <div class="count-pdf-info">
-                    <p class="count-count">₽300</p>
-                    <img
-                      class="count-image"
-                      src="./resources/images/count/file.svg"
-                      alt="Скачать счет"
-                    />
-                    <p class="count-pdf-info">PDF</p>
-                  </div>
-                </div>
-              </li>
-            </ul>
+
+            <div class="salary">
+              <div class="salary__logo">
+                <img class="salary__icon" src="./resources/images/salary/logo.png" alt="wallet" />
+              </div>
+              <h1 class="salary__title">Зарплата</h1>
+              <h2 class="salary__subtitle">Интерактивное принадлежащее</h2>
+              <div class="line"></div>
+              <span class="salary__amount">+ 20.000₽</span>
+            </div>
+
+            <div class="paypal">
+              <div class="paypal__logo">
+                <img class="paypal__icon" src="./resources/images/paypal/logo.png" alt="paypal logo" />
+              </div>
+              <h1 class="salary__title">Счет</h1>
+              <h2 class="salary__subtitle">Фриланс</h2>
+              <div class="line"></div>
+              <span class="paypal__balance">455.00₽</span>
+            </div>
+          </section>
+          <section class="pay-method">
+            <div class="pay-method__header">
+              <p class="pay-method__title">Способ оплаты</p>
+              <input class="pay-method__btn" type="button" value="Добавить">
+            </div>
+            <div class="pay-method__container">
+              <div class="pay-method__master-wrapper">
+                <input class="pay-method__input" placeholder="7812 2139 0823 XXXX" />
+              </div>
+              <div class="pay-method__visa-wrapper">
+                <input class="pay-method__input" placeholder="7812 2139 0823 XXXX" />
+              </div>
+            </div>
           </section>
         </div>
-        <div class="content__secondary">
-          <div class="info-sums">
-            <h1 class="info-sums-h">Информация о выставлении счетов</h1>
-            <div class="info-sums-block">
-              <div class="info-sums-up">
-                <h3 class="info-sums-name">Оливер Лиам</h3>
-                <div class="info-sums-right">
-                  <img
-                    src="./resources/images/info-sums/basket.png"
-                    width="12"
-                    height="12"
-                    alt="user"
-                  />
-                  <p class="info-sums-right-text">УДАЛИТЬ</p>
-                  <img src="./resources/images/info-sums/pen.png" width="12" height="12" alt="user" />
+        <section class="count">
+          <div class="count__header">
+            <p class="count__title">Счета</p>
+            <input class="count__btn" type="button" value="Посмотреть все">
+          </div>
+          <div class="container__items">
+              <div class="count__item">
+                <div class="count__item-main">
+                  <p class="count__date">Март, 01, 2020</p>
+                  <p class="count__number">#MS-415646</p>
+                </div>
+                <div class="count__item-secondary">
+                  <p class="count__price">₽180</p>
+                  <div class="count__download">
+                    <a class="count__download-link" href="#">
+                      <img class="count-image" src="./resources/images/count/file.svg" alt="Скачать счет" />
+                    </a>
+                    <a class="count__download-link" href="#">PDF</a>
+                  </div>
                 </div>
               </div>
-              <p class="info-sums-text">
-                Название компании: Викинг Буррито Адрес электронной почты:
-                oliver@burrito.com Номер НДС: FRB1235476
-              </p>
+              <div class="count__item">
+                <div class="count__item-main">
+                  <p class="count__date">Февраль, 10, 2021</p>
+                  <p class="count__number">#RV-126749</p>
+                </div>
+                <div class="count__item-secondary">
+                  <p class="count__price">₽250</p>
+                  <div class="count__download">
+                    <a class="count__download-link" href="#">
+                      <img class="count-image" src="./resources/images/count/file.svg" alt="Скачать счет" />
+                    </a>
+                    <a class="count__download-link" href="#">PDF</a>
+                  </div>
+                </div>
+              </div>
+              <div class="count__item">
+                <div class="count__item-main">
+                  <p class="count__date">Апрель, 05, 2020</p>
+                  <p class="count__number">#FB-212562</p>
+                </div>
+                <div class="count__item-secondary">
+                  <p class="count__price">₽560</p>
+                  <div class="count__download">
+                    <a class="count__download-link" href="#">
+                      <img class="count-image" src="./resources/images/count/file.svg" alt="Скачать счет" />
+                    </a>
+                    <a class="count__download-link" href="#">PDF</a>
+                  </div>
+                </div>
+              </div>
+              <div class="count__item">
+                <div class="count__item-main">
+                  <p class="count__date">Июнь, 25, 2019</p>
+                  <p class="count__number">#QW-103578</p>
+                </div>
+                <div class="count__item-secondary">
+                  <p class="count__price">₽120</p>
+                  <div class="count__download">
+                    <a class="count__download-link" href="#">
+                      <img class="count-image" src="./resources/images/count/file.svg" alt="Скачать счет" />
+                    </a>
+                    <a class="count__download-link" href="#">PDF</a>
+                  </div>
+                </div>
+              </div>
+              <div class="count__item">
+                <div class="count__item-main">
+                  <p class="count__date">Март, 01, 2019</p>
+                  <p class="count__number">#AR-803481</p>
+                </div>
+                <div class="count__item-secondary">
+                  <p class="count__price">₽300</p>
+                  <div class="count__download">
+                    <a class="count__download-link" href="#">
+                      <img class="count-image" src="./resources/images/count/file.svg" alt="Скачать счет" />
+                    </a>
+                    <a class="count__download-link" href="#">PDF</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </section>
+      </div>
+      <div class="content__secondary">
+        <div class="info-sums">
+          <h1 class="info-sums-h">Информация о выставлении счетов</h1>
+          <div class="info-sums-block">
+            <div class="info-sums-up">
+              <h3 class="info-sums-name">Оливер Лиам</h3>
+              <div class="info-sums-right">
+                <img src="./resources/images/info-sums/basket.png" width="12" height="12" alt="user" />
+                <p class="info-sums-right-text">УДАЛИТЬ</p>
+                <img src="./resources/images/info-sums/pen.png" width="12" height="12" alt="user" />
+              </div>
             </div>
-            <div class="info-sums-block">
-              <div class="info-sums-up">
-                <h3 class="info-sums-name">Оливер Лиам</h3>
-                <div class="info-sums-right">
-                  <img
-                    src="./resources/images/info-sums/basket.png"
-                    width="12"
-                    height="12"
-                    alt="user"
-                  />
-                  <p class="info-sums-right-text">УДАЛИТЬ</p>
-                  <img src="./resources/images/info-sums/pen.png" width="12" height="12" alt="user" />
-                </div>
+            <p class="info-sums-text">
+              Название компании: Викинг Буррито Адрес электронной почты:
+              oliver@burrito.com Номер НДС: FRB1235476
+            </p>
+          </div>
+          <div class="info-sums-block">
+            <div class="info-sums-up">
+              <h3 class="info-sums-name">Оливер Лиам</h3>
+              <div class="info-sums-right">
+                <img src="./resources/images/info-sums/basket.png" width="12" height="12" alt="user" />
+                <p class="info-sums-right-text">УДАЛИТЬ</p>
+                <img src="./resources/images/info-sums/pen.png" width="12" height="12" alt="user" />
               </div>
-              <p class="info-sums-text">
-                Название компании: Викинг Буррито Адрес электронной почты:
-                oliver@burrito.com Номер НДС: FRB1235476
-              </p>
             </div>
-            <div class="info-sums-block">
-              <div class="info-sums-up">
-                <h3 class="info-sums-name">Оливер Лиам</h3>
-                <div class="info-sums-right">
-                  <img
-                    src="./resources/images/info-sums/basket.png"
-                    width="12"
-                    height="12"
-                    alt="user"
-                  />
-                  <p class="info-sums-right-text">УДАЛИТЬ</p>
-                  <img src="./resources/images/info-sums/pen.png" width="12" height="12" alt="user" />
-                </div>
+            <p class="info-sums-text">
+              Название компании: Викинг Буррито Адрес электронной почты:
+              oliver@burrito.com Номер НДС: FRB1235476
+            </p>
+          </div>
+          <div class="info-sums-block">
+            <div class="info-sums-up">
+              <h3 class="info-sums-name">Оливер Лиам</h3>
+              <div class="info-sums-right">
+                <img src="./resources/images/info-sums/basket.png" width="12" height="12" alt="user" />
+                <p class="info-sums-right-text">УДАЛИТЬ</p>
+                <img src="./resources/images/info-sums/pen.png" width="12" height="12" alt="user" />
               </div>
-              <p class="info-sums-text">
-                Название компании: Викинг Буррито Адрес электронной почты:
-                oliver@burrito.com Номер НДС: FRB1235476
-              </p>
+            </div>
+            <p class="info-sums-text">
+              Название компании: Викинг Буррито Адрес электронной почты:
+              oliver@burrito.com Номер НДС: FRB1235476
+            </p>
+          </div>
+        </div>
+        <div class="tranzactions-info">
+          <div class="tranzactions-header">
+            <h3 class="tranzactions-header-left">Ваши транзакции</h3>
+            <div class="tranzactions-header-right">
+              <img src="./resources/images/tranzactions-info/calendar.png" alt="Календарь">
+              <p>23 - 30 марта 2020 года</p>
             </div>
           </div>
-          <div class="tranzactions-info">
-            <div class="tranzactions-header">
-              <h3 class="tranzactions-header-left">Ваши транзакции</h3>
-              <div class="tranzactions-header-right">
-                <img src="./resources/images/tranzactions-info/calendar.png" alt="Календарь">
-                <p>23 - 30 марта 2020 года</p>
+          <div class="tranzactions-block">
+            <p class="tranzactions-time-text">САМЫЙ НОВЫЙ</p>
+            <div class="tranzactions-block-down">
+              <img src="./resources/images/tranzactions-info/rejected.png" width="35" height="35" alt="#" />
+              <div class="tranzactions-block-text">
+                <h5 class="tranzactions-title-text-up">Яндекс</h5>
+                <p class="tranzactions-title-text-down">
+                  27 марта 2020 года, в 12:30 часов
+                </p>
               </div>
+              <p class="price-down">-2500P</p>
             </div>
-            <div class="tranzactions-block">
-              <p class="tranzactions-time-text">САМЫЙ НОВЫЙ</p>
-              <div class="tranzactions-block-down">
-                <img src="./resources/images/tranzactions-info/rejected.png" width="35" height="35" alt="#" />
-                <div class="tranzactions-block-text">
-                  <h5 class="tranzactions-title-text-up">Яндекс</h5>
-                  <p class="tranzactions-title-text-down">
-                    27 марта 2020 года, в 12:30 часов
-                  </p>
-                </div>
-                <p class="price-down">-2500P</p>
+            <div class="tranzactions-block-up">
+              <img src="./resources/images/tranzactions-info/approval.png" width="35" height="35" alt="#" />
+              <div class="tranzactions-block-text">
+                <h5 class="tranzactions-title-text-up">Газпром</h5>
+                <p class="tranzactions-title-text-down">
+                  27 марта 2020 года, в 12:30 часов
+                </p>
               </div>
-              <div class="tranzactions-block-up">
-                <img src="./resources/images/tranzactions-info/approval.png" width="35" height="35" alt="#" />
-                <div class="tranzactions-block-text">
-                  <h5 class="tranzactions-title-text-up">Газпром</h5>
-                  <p class="tranzactions-title-text-down">
-                    27 марта 2020 года, в 12:30 часов
-                  </p>
-                </div>
-                <p class="price-up">+2500P</p>
-              </div>
+              <p class="price-up">+2500P</p>
             </div>
-            <div class="tranzactions-block">
-              <p class="tranzactions-time-text">ВЧЕРА</p>
-              <div class="tranzactions-block-up">
-                <img src="./resources/images/tranzactions-info/approval.png" width="35" height="35" alt="#" />
-                <div class="tranzactions-block-text">
-                  <h5 class="tranzactions-title-text-up">Страйп</h5>
-                  <p class="tranzactions-title-text-down">
-                    27 марта 2020 года, в 12:30 часов
-                  </p>
-                </div>
-                <p class="price-up">+800P</p>
+          </div>
+          <div class="tranzactions-block">
+            <p class="tranzactions-time-text">ВЧЕРА</p>
+            <div class="tranzactions-block-up">
+              <img src="./resources/images/tranzactions-info/approval.png" width="35" height="35" alt="#" />
+              <div class="tranzactions-block-text">
+                <h5 class="tranzactions-title-text-up">Страйп</h5>
+                <p class="tranzactions-title-text-down">
+                  27 марта 2020 года, в 12:30 часов
+                </p>
               </div>
-              <div class="tranzactions-block-up">
-                <img src="./resources/images/tranzactions-info/approval.png" width="35" height="35" alt="#" />
-                <div class="tranzactions-block-text">
-                  <h5 class="tranzactions-title-text-up">ВК</h5>
-                  <p class="tranzactions-title-text-down">
-                    27 марта 2020 года, в 12:30 часов
-                  </p>
-                </div>
-                <p class="price-up">+1700P</p>
+              <p class="price-up">+800P</p>
+            </div>
+            <div class="tranzactions-block-up">
+              <img src="./resources/images/tranzactions-info/approval.png" width="35" height="35" alt="#" />
+              <div class="tranzactions-block-text">
+                <h5 class="tranzactions-title-text-up">ВК</h5>
+                <p class="tranzactions-title-text-down">
+                  27 марта 2020 года, в 12:30 часов
+                </p>
               </div>
-              <div class="tranzactions-block-down">
-                <img src="./resources/images/tranzactions-info/waiting.png" width="35" height="35" alt="#" />
-                <div class="tranzactions-block-text">
-                  <h5 class="tranzactions-title-text-up">Кион</h5>
-                  <p class="tranzactions-title-text-down">
-                    27 марта 2020 года, в 12:30 часов
-                  </p>
-                </div>
-                <p class="price-midle">В ожидании</p>
+              <p class="price-up">+1700P</p>
+            </div>
+            <div class="tranzactions-block-down">
+              <img src="./resources/images/tranzactions-info/waiting.png" width="35" height="35" alt="#" />
+              <div class="tranzactions-block-text">
+                <h5 class="tranzactions-title-text-up">Кион</h5>
+                <p class="tranzactions-title-text-down">
+                  27 марта 2020 года, в 12:30 часов
+                </p>
               </div>
-              <div class="tranzactions-block-down">
-                <img src="./resources/images/tranzactions-info/rejected.png" width="35" height="35" alt="#" />
-                <div class="tranzactions-block-text">
-                  <h5 class="tranzactions-title-text-up">Тинькофф</h5>
-                  <p class="tranzactions-title-text-down">
-                    27 марта 2020 года, в 12:30 часов
-                  </p>
-                </div>
-                <p class="price-down">-987P</p>
+              <p class="price-midle">В ожидании</p>
+            </div>
+            <div class="tranzactions-block-down">
+              <img src="./resources/images/tranzactions-info/rejected.png" width="35" height="35" alt="#" />
+              <div class="tranzactions-block-text">
+                <h5 class="tranzactions-title-text-up">Тинькофф</h5>
+                <p class="tranzactions-title-text-down">
+                  27 марта 2020 года, в 12:30 часов
+                </p>
               </div>
+              <p class="price-down">-987P</p>
             </div>
           </div>
         </div>
       </div>
-    </main>
+    </div>
+  </main>
 
-    <footer>
-      <div class="footer-nav">
-        <a class="footer-nav__link" href="#">Творческое время</a>
-        <a class="footer-nav__link" href="#">Блог</a>
-        <a class="footer-nav__link" href="#">Лицензия</a>
-      </div>
-    </footer>
-  </body>
+  <footer>
+    <div class="footer-nav">
+      <a class="footer-nav__link" href="#">Творческое время</a>
+      <a class="footer-nav__link" href="#">Блог</a>
+      <a class="footer-nav__link" href="#">Лицензия</a>
+    </div>
+  </footer>
+</body>
+
 </html>
