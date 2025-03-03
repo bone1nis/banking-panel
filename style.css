@@ -210,7 +210,7 @@ main {
 }
 
 /* Транзакции */
-.transactions-info {
+.transactions {
     padding: 28px 21px 0 21px;
     width: 660px;
     height: 538px;
@@ -575,6 +575,7 @@ main {
 }
 
 /* Count */
+
 .count {
     box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.05);
     padding: 28px 21.5px 47.5px 24px;
@@ -755,13 +756,8 @@ main {
     color: #a0aec0;
 }
 
-.mastercard {
-    margin-left: 19px;
-    background-image: url("../images/background/mastercard.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff;
-}
+
+/* Transactions */
 
 .transactions-header {
     display: flex;
@@ -776,22 +772,27 @@ main {
 
 .transactions-header__subtitle {
     display: flex;
-    align-items: center;
     gap: 6px;
     color: #a0aec0;
     margin-top: 4px;
 }
 
-.transactions-time-text {
+.transactions__newest-text {
+    text-transform: uppercase;
     font-size: 10px;
     line-height: 15px;
     color: #a0aec0;
     margin-bottom: 17.5px;
 }
 
-.transactions-block-up {
+.transactions__item {
     display: flex;
     margin-bottom: 24px;
+}
+
+.transactions__status-icon {
+    width: 35px;
+    height: 35px;
 }
 
 .transactions-block-down {
@@ -799,44 +800,37 @@ main {
     margin-bottom: 24px;
 }
 
-.transactions-block-text {
+.transactions__item-details {
     margin-left: 14px;
     margin-top: 4px;
 }
 
-.transactions-title-text-up {
+.transactions__merchant {
     font-size: 14px;
     color: #2d3748;
     margin-bottom: 5px;
 }
 
-.transactions-title-text-down {
+.transactions__date-time {
     font-size: 12px;
     line-height: 18px;
     color: #a0aec0;
 }
 
-.price-down {
+.transactions__amount {
     font-size: 14px;
+    margin-left: auto;
+    margin-top: 16px;
+}
+
+.transactions__amount_rejected {
     color: #e53e3e;
-    margin-left: auto;
-    margin-top: 16px;
 }
 
-.price-midle {
-    font-size: 14px;
-    line-height: 19.6px;
-    text-align: right;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: #2d3748;
-    margin-left: auto;
-    margin-top: 16px;
-}
-
-.price-up {
-    font-size: 14px;
+.transactions__amount_approval {
     color: #48bb78;
-    margin-left: auto;
-    margin-top: 16px;
+}
+
+.transactions__amount_waiting {
+    color: #2d3748;
 }

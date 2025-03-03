@@ -53,33 +53,33 @@
           <h2 class="sidebar__title">Панель управления</h2>
         </div>
         <div class="sidebar__item">
-          <img class="sidebar__item-img" src="./resources/images/sidebar/tabels.png" alt="table" />
+          <a href=""><img class="sidebar__item-img" src="./resources/images/sidebar/tabels.png" alt="Перейти к таблицам" /></a>
           <a class="sidebar__subtitle" href="#">Таблицы</a>
         </div>
         <div class="sidebar__item">
-          <img class="sidebar__item-img" src="./resources/images/sidebar/card.png" alt="card" />
+          <img class="sidebar__item-img" src="./resources/images/sidebar/card.png" alt="Перейти к выставлению счетов" />
           <a class="sidebar__subtitle" href="#">Выставление счетов</a>
         </div>
         <div class="sidebar__item">
-          <img class="sidebar__item-img" src="./resources/images/sidebar/RTL.png" alt="RTL" />
+          <img class="sidebar__item-img" src="./resources/images/sidebar/RTL.png" alt="Перейти к RTL" />
           <a class="sidebar__subtitle" href="#">RTL</a>
         </div>
         <h2 class="sidebar__title sidebar__title_custom">СТРАНИЦЫ АККАУНТА</h2>
         <div class="sidebar__item">
-          <img class="sidebar__item-img" src="./resources/images/sidebar/profile.png" alt="profile" />
+          <img class="sidebar__item-img" src="./resources/images/sidebar/profile.png" alt="Перейти к профилю" />
           <a class="sidebar__subtitle" href="#">Профиль</a>
         </div>
         <div class="sidebar__item">
-          <img class="sidebar__item-img" src="./resources/images/sidebar/file.png" alt="file" />
+          <img class="sidebar__item-img" src="./resources/images/sidebar/file.png" alt="Перейти к авторизации" />
           <a class="sidebar__subtitle" href="#">Войти</a>
         </div>
         <div class="sidebar__item">
-          <img class="sidebar__item-img" src="./resources/images/sidebar/rocket.png" alt="rocket" />
+          <img class="sidebar__item-img" src="./resources/images/sidebar/rocket.png" alt="Перейти к регистрации" />
           <a class="sidebar__subtitle" href="#">Зарегестрироваться</a>
         </div>
       </div>
       <div class="sidebar__help">
-        <img class="sidebar__help-img" src="./resources/images/sidebar/bigfile.png" alt="file" />
+        <img class="sidebar__help-img" src="./resources/images/sidebar/bigfile.png" alt="Перейти к документации" />
         <span class="sidebar__help-title">Нужна помощь?</span>
         <button class="sidebar__help-button">Документация</button>
       </div>
@@ -291,78 +291,78 @@
             </p>
           </div>
         </div>
-        <div class="transactions-info">
+        <div class="transactions">
           <div class="transactions-header">
             <h3 class="transactions-header__title">Ваши транзакции</h3>
             <div class="transactions-header__subtitle">
-              <img src="./resources/images/transactions-info/calendar.png" alt="Календарь">
+              <img src="./resources/images/transactions/calendar.png" alt="Календарь">
               <p>23 - 30 марта 2020 года</p>
             </div>
           </div>
-          <div class="transactions-block">
-            <p class="transactions-time-text">САМЫЙ НОВЫЙ</p>
-            <div class="transactions-block-down">
-              <img src="./resources/images/transactions-info/rejected.png" width="35" height="35" alt="#" />
-              <div class="transactions-block-text">
-                <h5 class="transactions-title-text-up">Яндекс</h5>
-                <p class="transactions-title-text-down">
+          <div class="transactions-content">
+            <p class="transactions__newest-text">Самый новый</p>
+            <div class="transactions__item">
+              <img class="transactions__status-icon" src="./resources/images/transactions/rejected.png" alt="Иконка отклоненной операции" />
+              <div class="transactions__item-details">
+                <h5 class="transactions__merchant">Яндекс</h5>
+                <p class="transactions__date-time">
                   27 марта 2020 года, в 12:30 часов
                 </p>
               </div>
-              <p class="price-down">-2500P</p>
+              <p class="transactions__amount transactions__amount_rejected">-2500P</p>
             </div>
-            <div class="transactions-block-up">
-              <img src="./resources/images/transactions-info/approval.png" width="35" height="35" alt="#" />
-              <div class="transactions-block-text">
-                <h5 class="transactions-title-text-up">Газпром</h5>
-                <p class="transactions-title-text-down">
+            <div class="transactions__item">
+              <img class="transactions__status-icon" src="./resources/images/transactions/approval.png" alt="Иконка одобренной операции" />
+              <div class="transactions__item-details">
+                <h5 class="transactions__merchant">Газпром</h5>
+                <p class="transactions__date-time">
                   27 марта 2020 года, в 12:30 часов
                 </p>
               </div>
-              <p class="price-up">+2500P</p>
+              <p class="transactions__amount transactions__amount_approval">+2500P</p>
             </div>
           </div>
           <div class="transactions-block">
-            <p class="transactions-time-text">ВЧЕРА</p>
-            <div class="transactions-block-up">
-              <img src="./resources/images/transactions-info/approval.png" width="35" height="35" alt="#" />
-              <div class="transactions-block-text">
-                <h5 class="transactions-title-text-up">Страйп</h5>
-                <p class="transactions-title-text-down">
-                  27 марта 2020 года, в 12:30 часов
+            <p class="transactions__newest-text">Вчера</p>
+            <div class="transactions__item">
+              <img class="transactions__status-icon" src="./resources/images/transactions/approval.png" alt="Иконка одобренной операции" />
+              <div class="transactions__item-details">
+                <h5 class="transactions__merchant">Страйп</h5>
+                <p class="transactions__date-time">
+                  26 марта 2020 года, в 13:45 часов
                 </p>
               </div>
-              <p class="price-up">+800P</p>
+              <p class="transactions__amount transactions__amount_approval">+800P</p>
             </div>
-            <div class="transactions-block-up">
-              <img src="./resources/images/transactions-info/approval.png" width="35" height="35" alt="#" />
-              <div class="transactions-block-text">
-                <h5 class="transactions-title-text-up">ВК</h5>
-                <p class="transactions-title-text-down">
-                  27 марта 2020 года, в 12:30 часов
+            <div class="transactions__item">
+              <img class="transactions__status-icon" src="./resources/images/transactions/approval.png" alt="Иконка одобренной операции" />
+              <div class="transactions__item-details">
+                <h5 class="transactions__merchant">ВК</h5>
+                <p class="transactions__date-time">
+                  26 марта 2020 года, в 12:30 часов
                 </p>
               </div>
-              <p class="price-up">+1700P</p>
+              <p class="transactions__amount transactions__amount_approval">+1700P</p>
             </div>
-            <div class="transactions-block-down">
-              <img src="./resources/images/transactions-info/waiting.png" width="35" height="35" alt="#" />
-              <div class="transactions-block-text">
-                <h5 class="transactions-title-text-up">Кион</h5>
-                <p class="transactions-title-text-down">
-                  27 марта 2020 года, в 12:30 часов
+            <div class="transactions__item">
+              <img class="transactions__status-icon" src="./resources/images/transactions/waiting.png" alt="Иконка ожидающей операции" />
+              <div class="transactions__item-details">
+                <h5 class="transactions__merchant">Кион</h5>
+                <p class="transactions__date-time">
+                  26 марта 2020 года, в 05:00 часов
                 </p>
               </div>
-              <p class="price-midle">В ожидании</p>
+              <p class="transactions__amount transactions__amount_waiting">В ожидании</p>
             </div>
-            <div class="transactions-block-down">
-              <img src="./resources/images/transactions-info/rejected.png" width="35" height="35" alt="#" />
-              <div class="transactions-block-text">
-                <h5 class="transactions-title-text-up">Тинькофф</h5>
-                <p class="transactions-title-text-down">
-                  27 марта 2020 года, в 12:30 часов
+            <div class="transactions__item">
+              <img class="transactions__status-icon" src="./resources/images/transactions/rejected.png" alt="Иконка одобренной операции" />
+              <div class="transactions__item-details">
+                <h5 class="transactions__merchant">Тинькофф</h5>
+                <p class="transactions__date-time">
+                  25 марта 2020 года, в 16:30 часов
                 </p>
               </div>
-              <p class="price-down">-987P</p>
+              <p class="transactions__amount transactions__amount_rejected">-987P</p>
             </div>
           </div>
         </div>
