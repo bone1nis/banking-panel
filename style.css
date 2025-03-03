@@ -156,6 +156,7 @@ main {
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.05);
+    padding: 11px 24px 17px 21.5px;
     display: flex;
     flex-direction: column;
 }
@@ -224,7 +225,7 @@ main {
 .sidebar__menu {
     width: 219.5px;
     height: 402px;
-    margin: 10px 26px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
 }
@@ -239,6 +240,7 @@ main {
     display: flex;
     align-items: center;
     gap: 12px;
+    margin-bottom: 18px;
 }
 
 .sidebar__title {
@@ -248,7 +250,7 @@ main {
 }
 
 .sidebar__title_custom {
-    margin-left: 13px;
+    margin: 30px 0 30px 13px;
 }
 
 .sidebar__title-icon {
@@ -256,8 +258,14 @@ main {
     height: 30px;
 }
 
+.sidebar__items {
+    margin-left: 23.5px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
 .sidebar__item {
-    margin: 20px 0px 20px 18px;
     display: flex;
     align-items: center;
     font-size: 12px;
@@ -280,8 +288,8 @@ main {
 }
 
 .sidebar__help {
+    margin-top: 69px;
     height: 228px;
-    margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -379,6 +387,7 @@ main {
 
 
 /* Salary, Paypal */
+
 .salary,
 .paypal {
     width: 240px;
@@ -410,15 +419,6 @@ main {
 
 .paypal__icon {
     width: 17.22px;
-}
-
-.salary,
-.paypal {
-    min-width: 240px;
-    min-height: 240px;
-    border-radius: 20px;
-    background: #FFFFFF;
-    box-shadow: 0px 5px 14px 0px #0000000D;
 }
 
 .salary__title,
